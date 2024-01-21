@@ -42,4 +42,6 @@ app.ws('/chat', wsHandler)
 app.use(express.static('build'))
 
 // start the server, listening to port 8080
-app.listen(8080)
+app.listen(8080, ()=>{
+  console.log('LISTENING ON PORT: 8000')
+})
